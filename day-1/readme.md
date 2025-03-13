@@ -29,4 +29,6 @@ A container is a lightweight, portable, and isolated environment that packages a
 Here the Developer writes a Dockerfile by using docker build command the docker files converts into docker image by using docker push command we can push that image into dockerhub from that dockerhub pulling the image into our environment like dev, test, prod...
 
 
+# Docker Architecture
+
 ![alt text](arch-docker.jpeg)
