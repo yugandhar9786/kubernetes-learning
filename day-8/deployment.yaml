@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx-deploy-app
+    type: frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx-pod   # ✅ Match this with template.metadata.labels
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        app: nginx-pod   # ✅ Match with selector.matchLabels
+        tier: frontend
+    spec:
+      containers:
+      - name: nginx-container
+        image: nginx
+
