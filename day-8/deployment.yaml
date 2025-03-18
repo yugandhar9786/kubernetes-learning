@@ -10,12 +10,12 @@ spec:
   selector:
     matchLabels:
       app: nginx-pod   # ✅ Match this with template.metadata.labels
-      tier: frontend
+      type: frontend
   template:
     metadata:
       labels:
         app: nginx-pod   # ✅ Match with selector.matchLabels
-        tier: frontend
+        type: frontend
     spec:
       containers:
       - name: nginx-container
