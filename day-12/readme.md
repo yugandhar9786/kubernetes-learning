@@ -12,8 +12,8 @@
     4. * it represents in terms of months in a year (1-12)
     4. * it represents in terms of days of a week (0-6) sunday to saturday
 
-    ``` bash
 
+``` bash
 apiVersion: batch/v1
 kind: CronJob
 metadata:
@@ -33,7 +33,7 @@ spec:
             - -c
             - date; echo Hello from the Kubernetes cluster
           restartPolicy: OnFailure
-          ```
+```
 
 ![Alt Text](https://www.scaler.com/topics/images/cron-job-in-linux-1.webp)
 
