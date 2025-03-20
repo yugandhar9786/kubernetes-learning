@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: nginx-ds
+  labels:
+    app: nginx-ds-app
+    type: frontend
+spec:
+  selector:
+    matchLabels:
+      app: nginx-ds   #  Match this with template.metadata.labels
+      type: frontend
+  template:
+    metadata:
+      labels:
+        app: nginx-ds   #  Match with selector.matchLabels
+        type: frontend
+    spec:
+      containers:
+      - name: nginx-container
+        image: nginx
+
