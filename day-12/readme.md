@@ -12,7 +12,7 @@
     2. * it represents in terms of hours from (0-23)
     3. * it represents in terms of days in a month (1-31)
     4. * it represents in terms of months in a year (1-12)
-    4. * it represents in terms of days of a week (0-6) sunday to saturday
+    5. * it represents in terms of days of a week (0-6) sunday to saturday
 
 
 ``` bash
